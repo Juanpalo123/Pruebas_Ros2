@@ -8,6 +8,12 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 add_executable(test_node src/my_first_node.cpp)
+find_package(rclcpp REQUIRED)
+ament_target_dependencies(test_node rclcpp)
+
+
+find_package(example_interfaces REQUIRED)
+
 
 install(TARGETS
   test_node
