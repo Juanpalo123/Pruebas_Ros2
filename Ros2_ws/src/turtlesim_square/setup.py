@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'my_py_pkg'
+package_name = 'turtlesim_square'
 
 setup(
     name=package_name,
@@ -20,9 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "test_node = my_py_pkg.my_first_node:main",
-            "number_publisher = my_py_pkg.number_publisher:main",
-            "turtle_square = my_py_pkg.turtle_pruebas:main"
+            "draw_square_service  = turtlesim_square.turtle_service_node:main"
         ],
     },
 )
