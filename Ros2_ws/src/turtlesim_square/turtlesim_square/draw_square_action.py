@@ -3,7 +3,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionServer
 from geometry_msgs.msg import Twist
-from example_interfaces.action import Fibonacci  # Puedes crear un nuevo mensaje si lo deseas
+from example_interfaces.action import Fibonacci  
 import time
 
 class TurtleSquareAction(Node):
@@ -14,7 +14,7 @@ class TurtleSquareAction(Node):
         # Crear el servidor de acción
         self._action_server = ActionServer(
             self,
-            Fibonacci,  # Puedes cambiar esto por una acción personalizada
+            Fibonacci,  
             'draw_square',
             self.execute_callback
         )

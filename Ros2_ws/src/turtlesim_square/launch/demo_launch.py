@@ -28,7 +28,7 @@ def generate_launch_description():
                 {'linear_speed': float(os.environ.get('ROS_LINEAR_SPEED', '1.0'))},
                 {'angular_speed': float(os.environ.get('ROS_ANGULAR_SPEED', '1.57'))}
             ],
-            remappings=[('/turtle1/cmd_vel', '/turtle1/cmd_vel')]  # Asegúrate de que este remapeo sea necesario
+            remappings=[('/turtle1/cmd_vel', '/turtle1/cmd_vel')]  
         ),
 
         # Mensaje informativo
