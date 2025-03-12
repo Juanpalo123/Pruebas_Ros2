@@ -1,28 +1,22 @@
-# Nombre del Proyecto
+# ROS2 Programmed Assignment
 
-![Imagen de Cabecera](figs/turtle.png) <!-- Opcional: puedes agregar una imagen de cabecera -->
+![Imagen de Cabecera](figs/turtle.png)
 
-## Descripción
+## Description
 
-Una breve descripción de lo que hace tu proyecto. Explica de manera clara y concisa su propósito y lo que resuelve. Este es un buen lugar para captar el interés de los usuarios.
+Based on turtlesim, ROS2 tutorials and ROS book chapters 4-9
 
-**Características principales:**
-- Característica 1
-- Característica 2
-- Característica 3
 
----
-
-## Tabla de Contenidos
-
-1. [Instalación](#instalación)
-2. [Uso](#uso)
-3. [Contribución](#contribución)
-4. [Licencia](#licencia)
+**Work**
+- Create a node for turtlesim to draw a square (hint: publish and sleep)
+- Make it a service
+- Make it an action (add status update)
+- Add parameter(s) and demo launch 
+- Push the code to a repo at https://github.com/im2ag-m1-robotics-2025/
 
 ---
 
-## Instalación
+## Create a node for turtlesim to draw a square
 
 Para instalar y ejecutar este proyecto en tu entorno local, sigue estos pasos:
 
