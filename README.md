@@ -70,7 +70,26 @@ ros2 action send_goal /draw_square example_interfaces/action/Fibonacci "{}"
 ros2 run turtlesim turtlesim_node   
 ```
 
+EJECUTA LA ACCION PERO CON PARAMETROS
+```
+ros2 run turtlesim_square turtle_square_with_params --ros-args -p linear_speed:=0.5 -p angular_speed:=1.57
+```
+
+SOLICITUD DE ACCION
+```
+ros2 action send_goal /draw_square example_interfaces/action/Fibonacci "{}"
+```
 
 ## Demo launch
+
+```
+ros2 launch turtlesim_square demo_launch.py
+```
+
+SOLICITUD DE ACCION
+```
+ros2 action send_goal /draw_square example_interfaces/action/Fibonacci "{}"
+```
+
 
 
