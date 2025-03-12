@@ -16,20 +16,61 @@ Based on turtlesim, ROS2 tutorials and ROS book chapters 4-9
 
 ---
 
+### Instalation
+
+```
+git clone https://github.com/tu-usuario/nombre-del-proyecto.git
+```
+
 ## Create a node for turtlesim to draw a square
 
-Para instalar y ejecutar este proyecto en tu entorno local, sigue estos pasos:
+```
+ros2 run turtlesim turtlesim_node   
+```
 
-### Requisitos
+```
+ros2 run my_py_pkg turtle_square
+```
 
-- Requisito 1 (por ejemplo, Node.js, Python, etc.)
-- Requisito 2 (librerías necesarias)
-- Requisito 3 (dependencias adicionales)
+## Make it a service
 
-### Pasos de Instalación
+```
+ros2 run turtlesim turtlesim_node   
+```
 
-1. Clona el repositorio:
+EJECUTAR EL SERVICIO
+```
+ros2 run turtlesim_square draw_square_service
+```
 
-   ```bash
-   git clone https://github.com/tu-usuario/nombre-del-proyecto.git
+LLAMAR AL SERVICIO
+```
+ros2 service call /draw_square std_srvs/srv/Trigger
+```
+
+## Make it an action
+
+```
+ros2 run turtlesim turtlesim_node   
+```
+
+EJECUTA LA ACCION
+```
+ros2 run turtlesim_square draw_square_action
+```
+
+SOLICITUD DE ACCION
+```
+ros2 action send_goal /draw_square example_interfaces/action/Fibonacci "{}"
+```
+
+## Add parameter(s)
+
+```
+ros2 run turtlesim turtlesim_node   
+```
+
+
+## Demo launch
+
 
