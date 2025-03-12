@@ -51,7 +51,7 @@ class TurtleSquareWithParams(Node):
             # Detener
             move_cmd.linear.x = 0.0
             self.publisher.publish(move_cmd)
-            time.sleep(1)
+            time.sleep(0.5)
 
             # Girar 90 grados
             move_cmd.angular.z = angular_speed
@@ -62,7 +62,7 @@ class TurtleSquareWithParams(Node):
             # Detener rotación
             move_cmd.angular.z = 0.0
             self.publisher.publish(move_cmd)
-            time.sleep(1)
+            time.sleep(0.5)
 
         self.get_logger().info("Square drawing completed")
 
