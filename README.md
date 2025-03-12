@@ -38,12 +38,12 @@ ros2 run my_py_pkg turtle_square
 ros2 run turtlesim turtlesim_node   
 ```
 
-EJECUTAR EL SERVICIO
+Execute the service
 ```
 ros2 run turtlesim_square draw_square_service
 ```
 
-LLAMAR AL SERVICIO
+Call the service
 ```
 ros2 service call /draw_square std_srvs/srv/Trigger
 ```
@@ -54,12 +54,12 @@ ros2 service call /draw_square std_srvs/srv/Trigger
 ros2 run turtlesim turtlesim_node   
 ```
 
-EJECUTA LA ACCION
+Execute the action
 ```
 ros2 run turtlesim_square draw_square_action
 ```
 
-SOLICITUD DE ACCION
+Application of the action
 ```
 ros2 action send_goal /draw_square example_interfaces/action/Fibonacci "{}"
 ```
@@ -70,12 +70,12 @@ ros2 action send_goal /draw_square example_interfaces/action/Fibonacci "{}"
 ros2 run turtlesim turtlesim_node   
 ```
 
-EJECUTA LA ACCION PERO CON PARAMETROS
+Execute the action with the parameters
 ```
 ros2 run turtlesim_square turtle_square_with_params --ros-args -p linear_speed:=0.5 -p angular_speed:=1.57
 ```
 
-SOLICITUD DE ACCION
+Application of the action
 ```
 ros2 action send_goal /draw_square example_interfaces/action/Fibonacci "{}"
 ```
@@ -86,7 +86,7 @@ ros2 action send_goal /draw_square example_interfaces/action/Fibonacci "{}"
 ros2 launch turtlesim_square demo_launch.py
 ```
 
-SOLICITUD DE ACCION
+Application of the action
 ```
 ros2 action send_goal /draw_square example_interfaces/action/Fibonacci "{}"
 ```
